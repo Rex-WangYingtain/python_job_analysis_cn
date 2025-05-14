@@ -1,0 +1,2 @@
+# python_job_analysis_cn
+使用python进行数据分析，爬取招聘网站拉勾网有关python的相关信息，并结合股票进行数据分析。
