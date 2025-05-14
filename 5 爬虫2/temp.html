@@ -1,0 +1,596 @@
+
+
+!DOCTYPE html PUBLIC -W3CDTD XHTML 1.0 TransitionalEN httpwww.w3.orgTRxhtml1DTDxhtml1-transitional.dtd
+html xmlns=httpwww.w3.org1999xhtml
+head
+    meta http-equiv=Content-Type content=texthtml; charset=gb2312 
+    meta name=keywords content=沪市风险警示板行情,沪市风险警示板指数,沪深股市,沪深指数 
+    meta name=description content=证券之星行情中心为您提供最新、最全、最精的沪市风险警示板实时行情和沪市风险警示板指数。帮助您充分掌握沪市风险警示板股市行情内容,追踪个股,为您的投资保驾护航! 
+    title
+        沪市风险警示板-股票行情-行情中心-证券之星title
+    link rel=stylesheet type=textcss href=j.ssajax.cncssquote2011stockmarket2014082701common.css 
+    script type=textjavascript src=j.ssajax.cnjsquote2011common20120411quotecommon.min.jsscript
+    script src=j.ssajax.cnjsquote2011quotecommon2014082702sort_npage_type.min.js type=textjavascriptscript
+    script src=j.ssajax.cnjsquote2011quotecommon2014082702sortpagetype.min.js type=textjavascriptscript
+    script src='j.ssajax.cnjsquote2011jquery20110711jquery.js' type='textjavascript'script    
+    base target=_blank 
+    script type=textjavascript
+        $(function () {
+            $('#ad_1').html('iframe id=ad_1 src=media.stockstar.comapiid=154&type=1 frameborder=0  marginwidth=0 marginheight=0 width=778 height=60 scrolling=noiframe')
+        })
+    script
+head
+body
+    !-- 头部 begin  --
+    div id=top
+  div class=w
+    div class=lfa href=www.stockstar.com首页aa href=stock.stockstar.com股票aa href=quote.stockstar.com行情aa href=resource.stockstar.com数据aa href=stock.stockstar.comreport研报aa href=fund.stockstar.com基金aa href=bond.stockstar.com债券aa href=if.stockstar.com期指aa href=futures.stockstar.com期货aa href=option.stockstar.com期权aa href=gold.stockstar.com黄金aa href=forex.stockstar.com外汇aa href=bank.stockstar.com银行a
+      div
+    div class=login
+      div class=icon homediv
+      div class=lfa href=javascriptvoid(0);return false; target=_self onclick=base.command.setHomepage(this,'quote.stockstar.com');设为首页aa href=javascriptvoid(0);return false; target=_self onclick=base.command.setFavorite('证券之星-行情频道','quote.stockstar.com');收藏本页adiv
+    div
+  div
+divdiv class=h_7div
+div id=head
+  div class=logo fla href=www.stockstar.com title=证券之星证券之星adiv
+  div id=ad_1 class=ad fr     
+  div
+div
+div class=h_7div
+    !-- 头部 end  --
+    div class=h_10
+    div
+    div class=top_nav
+        div class=pageTitle
+            h2 class=hqzx行情中心h2
+        div
+        div class=search id=divSearchBox
+            !-- 股票搜索框--
+            !--div class=ac_results style=z-index 100; top 23px; left 0px;div
+div class=searchText
+input class=text autocomplete=off type=text
+     value=代码名称拼音 onclick=AutoComplete.Clear('divSearchBox'); onkeyup=AutoComplete.Show(event,'divSearchBox',0,'quotesearch'); onblur=AutoComplete.OnBlur('divSearchBox'); div
+input type=submit class=newbtn redshbtn value=查询 onclick=AutoComplete.Submit('divSearchBox'); 
+div class=infomesage style=displaynone;div 
+form action=httpquote.stockstar.comstockexdir.aspx method=post
+input type=hidden name=code 
+input type=hidden name=mk 
+input type=hidden name=securtytype 
+input type=hidden name=target value=quotesearch 
+form--
+
+!-- 2013-01-21 new modify add by xb.zhu--
+div class=searchTextinput id=ajaxinput_q class=text type=text div
+input id=ajaxinputquery_q type=submit class=newbtn redshbtn value=查询
+script src=j.ssajax.cnjslibStockSuggest.min.1.8.jsv=1.0 type=textjavascriptscript
+script type=textjavascript
+    new StockSuggest(ajaxinput_q, {
+        width 193px,           下拉层宽度
+        autoSubmit true,         是否允许自动提交
+        className 'searchText', 自定义样式
+        types [101, 102, 103, 104, 201,105,106, 300, 401, 403, 405, 501, 502, 503, 504,801,802], 展示的证券类型
+        status [1, 2, 3,4],
+        opacity 1,                   透明度
+        shortcutKey true,                  行情软件中的快捷键 
+        text '代码简称拼音',       默认文字
+        header { show true, columns [简称, 类型] }, 显示字段
+        orderBy 2,                     指数代码优先
+        evt 'ajaxinputquery_q'       触发事件
+    });
+script
+
+        div
+    div
+    div class=h_5
+    div
+    div class=w
+        !-- 左侧子导航 begin --
+        
+div class=sideleft
+    div class=subMenuBox
+        div class=list submenu1
+            h3 class=hasChild cur curbg onclick=h3click(this)
+                em class=curema href=
+                    target=_self沪深市场ah3
+            div class=subNav style=displayblock
+                dl class=open
+                    dt class=hasChild em class=cur onclick=emclick(this)em
+                        a href='stockranklist_a.shtml' target=_self市场分类a dt
+                    dd
+                        ul
+                            li class=a href=stockranklist_a.shtml target=_self·A股市场ali
+                            li class=a href=stocksha.shtml target=_self·沪市A股ali
+                            li class=a href=stocksza.shtml target=_self·深市A股ali
+                            li class=a href=stockranklist_b.shtml target=_self·B股市场ali
+                            li class=a href=stockshb.shtml target=_self·沪市B股ali
+                            li class=a href=stockszb.shtml target=_self·深市B股ali
+                     
+                            li class=a href=stockgem.shtml target=_self·创业板ali
+                            li class=a href=stockstar.shtml target=_self·科创板ali
+                            
+                            li class=a href=stockipo.shtml target=_self·新股ali
+                            li class=a href=stockblockperformance_0_hsgshgtsh_0_0_1.html target=_self·沪港通(沪股通)ali
+                            li class=a href=stockblockperformance_0_sgtsz_0_0_1.html target=_self·深港通(深股通)ali
+                            li class=curbga href=stockshwarn.shtml target=_self·沪市风险警示板ali
+                       
+                            
+                            li class=a href=stockbjs.shtml target=_self·北证A股ali
+                            
+                        ul
+                    dd
+                dl
+                dl class=
+                    dt class=hasChild em class= onclick=emclick(this)em
+                        a href=stockindustry.shtml target=_self标准行业a dt
+                    dd
+                        ul
+                            li class=a href=stockindustry_A.shtml target=_self·农林牧渔业ali
+                            li class=a href=stockindustry_B.shtml target=_self·采矿业ali
+                            li class=a href=stockindustry_C.shtml target=_self·制造业ali
+                            li class=a href=stockindustry_D.shtml target=_self·水电煤ali
+                            li class=a href=stockindustry_E.shtml target=_self·建筑业ali
+                            li class=a href=stockindustry_F.shtml target=_self·批发和零售业ali
+                            li class=a href=stockindustry_G.shtml target=_self·交通运输仓储ali
+                            li class=a href=stockindustry_H.shtml target=_self·住宿和餐饮业ali
+                            li class=a href=stockindustry_I.shtml target=_self·信息技术业ali
+                            li class=a href=stockindustry_J.shtml target=_self·金融业ali
+                            li class=a href=stockindustry_K.shtml target=_self·房地产业ali
+                            li class=a href=stockindustry_L.shtml target=_self·租赁商务服务业ali
+                            li class=a href=stockindustry_M.shtml target=_self·科学技术服务业ali
+                            li class=a href=stockindustry_N.shtml target=_self·公共设施管理业ali
+                            li class=a href=stockindustry_O.shtml target=_self·居民服务修理业ali
+                            li class=a href=stockindustry_P.shtml target=_self·教育ali
+                            li class=a href=stockindustry_Q.shtml target=_self·卫生和社会工作ali
+                            li class=a href=stockindustry_R.shtml target=_self·文化体育娱乐业ali
+                            li class=a href=stockindustry_S.shtml target=_self·综合ali
+                        ul
+                    dd
+                dl
+                dl class=
+                    dt class=a href=stockblockrank_5.shtml target=_self
+                        概念板块a dt
+                dl
+                dl class=
+                    dt class=hasChild em class= onclick=emclick(this)em
+                        a href=stockblockrank_3.shtml target=_self地域板块a dt
+                    dd
+                        ul
+                            li class=a href=stockblockperformance_3_diyu110000.shtml
+                                target=_self·北京ali
+                            li class=a href=stockblockperformance_3_diyu310000.shtml
+                                target=_self·上海ali
+                            li class=a href=stockblockperformance_3_diyu120000.shtml
+                                target=_self·天津ali
+                            li class=a href=stockblockperformance_3_diyu440000.shtml
+                                target=_self·广东ali
+                            li class=a href=stockblockperformance_3_diyu500000.shtml
+                                target=_self·重庆ali
+                            li class=a href=stockblockperformance_3_diyu230000.shtml
+                                target=_self·黑龙江ali
+                            li class=a href=stockblockperformance_3_diyu220000.shtml
+                                target=_self·吉林ali
+                            li class=a href=stockblockperformance_3_diyu210000.shtml
+                                target=_self·辽宁ali
+                            li class=a href=stockblockperformance_3_diyu130000.shtml
+                                target=_self·河北ali
+                            li class=a href=stockblockperformance_3_diyu410000.shtml
+                                target=_self·河南ali
+                            li class=a href=stockblockperformance_3_diyu370000.shtml
+                                target=_self·山东ali
+                            li class=a href=stockblockperformance_3_diyu140000.shtml
+                                target=_self·山西ali
+                            li class=a href=stockblockperformance_3_diyu610000.shtml
+                                target=_self·陕西ali
+                            li class=a href=stockblockperformance_3_diyu640000.shtml
+                                target=_self·宁夏ali
+                            li class=a href=stockblockperformance_3_diyu620000.shtml
+                                target=_self·甘肃ali
+                            li class=a href=stockblockperformance_3_diyu650000.shtml
+                                target=_self·新疆ali
+                            li class=a href=stockblockperformance_3_diyu150000.shtml
+                                target=_self·内蒙古ali
+                            li class=a href=stockblockperformance_3_diyu540000.shtml
+                                target=_self·西藏ali
+                            li class=a href=stockblockperformance_3_diyu510000.shtml
+                                target=_self·四川ali
+                            li class=a href=stockblockperformance_3_diyu530000.shtml
+                                target=_self·云南ali
+                            li class=a href=stockblockperformance_3_diyu520000.shtml
+                                target=_self·贵州ali
+                            li class=a href=stockblockperformance_3_diyu450000.shtml
+                                target=_self·广西ali
+                            li class=a href=stockblockperformance_3_diyu460000.shtml
+                                target=_self·海南ali
+                            li class=a href=stockblockperformance_3_diyu420000.shtml
+                                target=_self·湖北ali
+                            li class=a href=stockblockperformance_3_diyu430000.shtml
+                                target=_self·湖南ali
+                            li class=a href=stockblockperformance_3_diyu360000.shtml
+                                target=_self·江西ali
+                            li class=a href=stockblockperformance_3_diyu320000.shtml
+                                target=_self·江苏ali
+                            li class=a href=stockblockperformance_3_diyu330000.shtml
+                                target=_self·浙江ali
+                            li class=a href=stockblockperformance_3_diyu340000.shtml
+                                target=_self·安徽ali
+                            li class=a href=stockblockperformance_3_diyu350000.shtml
+                                target=_self·福建ali
+                            li class=a href=stockblockperformance_3_diyu630000.shtml
+                                target=_self·青海ali
+                        ul
+                    dd
+                dl
+                
+                
+            div
+        div
+        
+        div class=list submenu2
+            h3 class=hasChild cur onclick=h3click(this)
+                em id=specialem class=ema href=global target=_self全球ah3
+            div class=subNav style=displaynone
+                dl class=
+                    dt class=a href=global target=_self全球股市a
+                    dt
+                dl
+                dl class=
+                    dt class=a href=globalchinastock.htm target=_self中国概念股a
+                    dt
+                dl
+            div
+        div
+        
+
+        div class=list submenu3
+            h3 class=hasChild cur onclick=h3click(this)
+                em class=ema href=fund target=_self基金ah3
+            div class=subNav style=displaynone
+                dl class=
+                    dt class=hasChild em class= onclick=emclick(this)em
+                        a href=fundopen.shtml target=_self开放式基金a dt
+                    dd
+                        ul
+                            li class=a href=fundindex.shtml target=_self·指数型ali
+                            li class=a href=fundstock.shtml target=_self·股票型ali
+                            li class=a href=fundmixed.shtml target=_self·混合型ali
+                            li class=a href=fundbond.shtml target=_self·债券型ali
+                             
+                            li class=a href=fundfof.shtml target=_self·FOFali
+                            li class=a href=fundqdii.shtml target=_self·QDIIali
+                            li class=a href=fundcurrency.shtml target=_self·货币型ali
+                        ul
+                    dd
+                dl
+                dl class=
+                    dt class=hasChild em class= onclick=emclick(this)em
+                        a href=fundclosed.shtml target=_self封闭式基金a dt
+                    dd
+                        ul
+                            li class=a href=fundclosed.shtml target=_self·场内基金ali
+                            li class=a href=fundetf.shtml target=_self·ETFali
+                        ul
+                    dd
+                dl
+                
+            div
+        div
+
+        !--div class=list submenu4
+            h3 class=hasChild cur
+                em class=ema href=futuresff.htm target=_self金融期货ah3
+            div class=subNav style=displaynone
+                dl class=
+                    dt class=hasChild em class=ema href=futuresif.htm target=_self股指期货adt
+                    dd
+                        ul
+                            li class=a href=futuresifnational.htm target=_self·国内期指ali
+                            li class=a href=futuresifglobal.htm target=_self·国际期指ali
+                        ul
+                    dd
+                dl
+                dl class=
+                    dt class=a href=futuresbf.htm target=_self债券期货adt
+                dl
+            div
+        div--
+        div class=list submenu9 !--20130225新添加调整，放置在最后 --
+        h3 class=hasChild cur onclick=h3click(this) 
+            
+            em class=ema href=futures target=_self期货ah3
+        div class=subNav style=displaynone
+ 
+         dl class=
+            dt class=hasChild em class= onclick=emclick(this)em a href=futuresfutures.shtml target=_self国内期货a dt
+             
+            dd
+              ul
+                li class=a href=futuresshfe.html target=_self·上海期货交易所a li
+                li class=a href=futuresdce.html target=_self·大连商品交易所a li
+                li class=a href=futuresczce.html target=_self·郑州商品交易所a li
+              ul
+            dd
+          dl
+           dl class=
+            dt class=hasChild em class= onclick=emclick(this)em a href=futuresfuturesglobal.shtml target=_self国际期货a dt
+            dd
+              ul
+                 li class=a href=futureslme.html target=_self·伦敦金属交易所a li
+                li class=a href=futuresipe.html target=_self·伦敦石油交易所a li
+                li class=a href=futurescbot.html target=_self·芝加哥期货交易所a li
+                !--li class=a href=futurescme.html target=_self·芝加哥商业交易所ali--
+                li class=a href=futuresnybot.html target=_self·纽约期货交易所ali
+                li class=a href=futuresnymex.html target=_self·纽约商品交易所ali
+                li class=a href=futurestocom.html target=_self·东京工业品交易所ali
+              ul
+            dd
+          dl
+        div
+      div
+        !-- 现货市场 --
+		
+		!-- end 现货市场 --
+        div class=list submenu6
+            h3 class=hasChild cur onclick=h3click(this)
+                em class=ema href=bond target=_self债券ah3
+            div class=subNav style=displaynone
+                dl class=
+                    dt class=a href=bondnational.shtml target=_self国债a
+                    dt
+                dl
+                dl class=
+                    dt class=a href=bondcorp.shtml target=_self企债a
+                    dt
+                dl
+                dl class=
+                    dt class=a href=stock.stockstar.comipokzz_7_1_1.html
+                        可转债a dt
+                dl
+                
+
+                
+            div
+        div
+        div class=list submenu7
+            h3 class=hasChild cur onclick=h3click(this)
+                em class=ema href=forex target=_self外汇ah3
+            div class=subNav style=displaynone
+                dl class=
+                    dt class=a href=forexall.shtml target=_self所有汇率a
+                    dt
+                dl
+                dl class=
+                    dt class=a href=forexbasic.shtml target=_self基本汇率a
+                    dt
+                dl
+                dl class=
+                    dt class=a href=forexcross.shtml target=_self交叉汇率a
+                    dt
+                dl
+            div
+        div
+
+        
+           div class=list submenu8
+			h3 class=cur onclick=h3click(this)
+				em class=ema target=_self href=gold黄金a
+			h3
+
+			div class=subNav style=displaynone
+                dl class=
+                    dt class=a href=goldglobalgold.shtml target=_self国际贵金属a
+                    dt
+                dl
+                
+                dl class=''
+					dt class=hasChild em class= onclick=emclick(this)em
+						a href=goldSHFE.shtml target=_self国内贵金属a
+					dt
+					dd
+						ul
+							li class=a href=goldSHFE.shtml target=_self·上海贵金属期货ali
+							li class=a href=goldSGE.shtml target=_self·上海贵金属现货ali
+						ul
+					dd
+				dl
+                
+                dl class=''
+					dt class=hasChild em class= onclick=emclick(this)em
+						a href=goldnationalcurrency.shtml target=_self金条金币报价a
+					dt
+					dd
+						ul
+							li class=a href=goldnationalcurrency.shtml target=_self·国内金条金币报价ali
+							li class=a href=goldglobalcurrency.shtml target=_self·国际金条金币报价ali
+						ul
+					dd
+				dl
+                dl class=
+                    dt class=a href=goldsalegold.shtml target=_self零售金商报价a
+                    dt
+                dl
+            div
+        div
+        
+
+         
+    div
+    div class=h_10
+    div
+    div class=bom_bor skinBox contactBox
+        div class=con
+            p class=phoneNum
+                strong数据合作电话：strongp
+            p
+                021-50819999
+            p
+            p class=email
+                strong意见反馈：strongp
+            p
+                sslink@stockstar.comp
+        div
+    div
+    div class=h_8
+    div
+    !--AdForward Begin--
+    div id=ad150250a href=info.stockstar.comhbwechatmatrix.htmlimg width=150 height=250 src=httpinfo.stockstar.cominfo150x25015025020230803.jpg alt=微信矩阵adiv
+    !--AdForward End--
+div
+script type=textjavascript
+    function h3click(evt) {
+        var $this = $(evt);
+        if ($this.is('.curbg') == true) {
+            $this.parent().children('div').hide();
+            $this.removeClass('curbg');
+            $this.children('em').removeClass('cur')
+        }
+        else {
+            $this.addClass('cur');
+            $this.addClass('curbg');
+            $this.children('em').addClass('cur')
+            $this.parent().children('div').show();
+        }
+    }
+    function emclick(evt) {
+        var $this = $(evt);
+        if ($this.is('.cur') == true) {
+            $this.parent().parent().removeClass('open');
+            $this.removeClass('cur');
+        }
+        else {
+            $this.addClass('cur');
+            $this.parent().parent().addClass('open');
+        }
+    }
+script
+
+
+
+        !-- 左侧子导航 end --
+        !-- 右侧内容 begin --
+        div class=sideRight
+            div class=nva_menu
+                h4
+                    a href=quote.stockstar.com返回行情首页ah4
+                h3当前位置：a href=www.stockstar.com首页a&nbsp;-&nbsp;a href=quote.stockstar.com行情a&nbsp;-&nbsp;a
+                    href=quote.stockstar.com沪深市场a&nbsp;-&nbsp;h3
+                h1
+                    沪市风险警示板h1
+            div
+            div class=clear
+            div
+            div class=box
+                div class=title title2 futures
+                    h2 class=cur id=tab_menu_1
+                        a href=shwarn.shtml target=_self onclick=tabShow('tab_menu_',1,2);风险警示股票ah2
+                   
+                div
+                div class=box box02
+                    div class=bg_box showcon
+                        div class=con showcon
+                            table width=100% border=0 cellpadding=0 cellspacing=0 class=trHover id=table1
+                                thead class=tbody_right
+                                    tr
+                                        td width=6% class=align_center
+                                            a href= sort=1代码a
+                                        td
+                                        td width=24% class=align_center简称
+                                    td
+                                        td width=17.5% class=align_right
+                                            a href= sort=2流通市值(万元)a
+                                        td
+                                        td width=17.5% class=align_right
+                                            a href= sort=3总市值(万元)a
+                                        td
+                                        td width=17.5% class=align_right
+                                            a href= sort=4流通股本(万元)a
+                                        td
+                                        td width=17.5% class=align_right
+                                            a href= sort=5总股本(万元)a
+                                        td
+                                        
+                                    tr
+                                thead
+                                tbody class=tbody_right id=datalist
+                                    trtd class=align_center selecta href=stock.quote.stockstar.com600070.shtml600070atdtd class=align_centera href=stock.quote.stockstar.com600070.shtmlST富润atdtd class=align_right 21282.27tdtd class=align_right 21311.67tdtd class=align_right 50672.07tdtd class=align_right 50742.07tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600071.shtml600071atdtd class=align_centera href=stock.quote.stockstar.com600071.shtml凤凰光学atdtd class=align_right 582013.23tdtd class=align_right 582013.23tdtd class=align_right 28157.39tdtd class=align_right 28157.39tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600077.shtml600077atdtd class=align_centera href=stock.quote.stockstar.com600077.shtmlST宋都atdtd class=align_right 54945.02tdtd class=align_right 54945.02tdtd class=align_right 134012.23tdtd class=align_right 134012.23tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600083.shtml600083atdtd class=align_centera href=stock.quote.stockstar.com600083.shtmlST博信atdtd class=align_right 20975.39tdtd class=align_right 21160.00tdtd class=align_right 22799.33tdtd class=align_right 23000.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600091.shtml600091atdtd class=align_centera href=stock.quote.stockstar.com600091.shtml退市明科atdtd class=align_right 33243.35tdtd class=align_right 33243.35tdtd class=align_right 43741.25tdtd class=align_right 43741.25tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600107.shtml600107atdtd class=align_centera href=stock.quote.stockstar.com600107.shtmlST尔雅atdtd class=align_right 127440.00tdtd class=align_right 127440.00tdtd class=align_right 36000.00tdtd class=align_right 36000.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600112.shtml600112atdtd class=align_centera href=stock.quote.stockstar.com600112.shtmlST天成atdtd class=align_right 37171.95tdtd class=align_right 37171.95tdtd class=align_right 50920.48tdtd class=align_right 50920.48tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600122.shtml600122atdtd class=align_centera href=stock.quote.stockstar.com600122.shtmlST宏图atdtd class=align_right 44013.82tdtd class=align_right 44013.82tdtd class=align_right 115825.84tdtd class=align_right 115825.84tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600130.shtml600130atdtd class=align_centera href=stock.quote.stockstar.com600130.shtmlST波导atdtd class=align_right 217500.00tdtd class=align_right 217500.00tdtd class=align_right 75000.00tdtd class=align_right 75000.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600136.shtml600136atdtd class=align_centera href=stock.quote.stockstar.com600136.shtmlST明诚atdtd class=align_right 400276.44tdtd class=align_right 420410.14tdtd class=align_right 194308.95tdtd class=align_right 204082.59tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600139.shtml600139atdtd class=align_centera href=stock.quote.stockstar.com600139.shtmlST西源atdtd class=align_right 48979.90tdtd class=align_right 48979.90tdtd class=align_right 66189.05tdtd class=align_right 66189.05tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600145.shtml600145atdtd class=align_centera href=stock.quote.stockstar.com600145.shtml退市新亿atdtd class=align_right 50697.41tdtd class=align_right 50697.41tdtd class=align_right 149110.04tdtd class=align_right 149110.04tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600163.shtml600163atdtd class=align_centera href=stock.quote.stockstar.com600163.shtml中闽能源atdtd class=align_right 1059968.85tdtd class=align_right 1059968.85tdtd class=align_right 190299.61tdtd class=align_right 190299.61tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600165.shtml600165atdtd class=align_centera href=stock.quote.stockstar.com600165.shtmlST宁科atdtd class=align_right 350660.49tdtd class=align_right 350660.49tdtd class=align_right 68488.38tdtd class=align_right 68488.38tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600190.shtml600190atdtd class=align_centera href=stock.quote.stockstar.com600190.shtmlST锦港atdtd class=align_right 165492.06tdtd class=align_right 186213.11tdtd class=align_right 177948.45tdtd class=align_right 200229.15tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600193.shtml600193atdtd class=align_centera href=stock.quote.stockstar.com600193.shtmlST创兴atdtd class=align_right 153559.65tdtd class=align_right 153559.65tdtd class=align_right 42537.30tdtd class=align_right 42537.30tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600200.shtml600200atdtd class=align_centera href=stock.quote.stockstar.com600200.shtmlST苏吴atdtd class=align_right 192648.34tdtd class=align_right 192993.15tdtd class=align_right 71087.95tdtd class=align_right 71215.18tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600213.shtml600213atdtd class=align_centera href=stock.quote.stockstar.com600213.shtmlST亚星atdtd class=align_right 181896.00tdtd class=align_right 181896.00tdtd class=align_right 28600.00tdtd class=align_right 28600.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600217.shtml600217atdtd class=align_centera href=stock.quote.stockstar.com600217.shtml中再资环atdtd class=align_right 750917.11tdtd class=align_right 750917.11tdtd class=align_right 165765.37tdtd class=align_right 165765.37tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600220.shtml600220atdtd class=align_centera href=stock.quote.stockstar.com600220.shtmlST阳光atdtd class=align_right 65983.59tdtd class=align_right 65983.59tdtd class=align_right 178334.03tdtd class=align_right 178334.03tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600228.shtml600228atdtd class=align_centera href=stock.quote.stockstar.com600228.shtmlST返利atdtd class=align_right 137917.56tdtd class=align_right 138779.16tdtd class=align_right 41666.94tdtd class=align_right 41927.24tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600234.shtml600234atdtd class=align_centera href=stock.quote.stockstar.com600234.shtmlST科新atdtd class=align_right 200566.02tdtd class=align_right 200566.02tdtd class=align_right 26252.10tdtd class=align_right 26252.10tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600238.shtml600238atdtd class=align_centera href=stock.quote.stockstar.com600238.shtmlST椰岛atdtd class=align_right 222500.79tdtd class=align_right 224100.00tdtd class=align_right 44500.16tdtd class=align_right 44820.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600242.shtml600242atdtd class=align_centera href=stock.quote.stockstar.com600242.shtml退市中昌atdtd class=align_right 11282.36tdtd class=align_right 11416.63tdtd class=align_right 45129.45tdtd class=align_right 45666.51tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600243.shtml600243atdtd class=align_centera href=stock.quote.stockstar.com600243.shtmlST海华atdtd class=align_right 109712.50tdtd class=align_right 109712.50tdtd class=align_right 43885.00tdtd class=align_right 43885.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600260.shtml600260atdtd class=align_centera href=stock.quote.stockstar.com600260.shtmlST凯乐atdtd class=align_right 46759.64tdtd class=align_right 46759.64tdtd class=align_right 99488.61tdtd class=align_right 99488.61tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600265.shtml600265atdtd class=align_centera href=stock.quote.stockstar.com600265.shtmlST景谷atdtd class=align_right 199243.00tdtd class=align_right 199243.00tdtd class=align_right 12980.00tdtd class=align_right 12980.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600277.shtml600277atdtd class=align_centera href=stock.quote.stockstar.com600277.shtmlST亿利atdtd class=align_right 135303.64tdtd class=align_right 135303.64tdtd class=align_right 356062.22tdtd class=align_right 356062.22tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600287.shtml600287atdtd class=align_centera href=stock.quote.stockstar.com600287.shtmlST舜天atdtd class=align_right 207478.14tdtd class=align_right 208452.79tdtd class=align_right 43679.61tdtd class=align_right 43884.80tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600289.shtml600289atdtd class=align_centera href=stock.quote.stockstar.com600289.shtmlST信通atdtd class=align_right 327103.31tdtd class=align_right 364748.10tdtd class=align_right 56592.27tdtd class=align_right 63105.21tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600290.shtml600290atdtd class=align_centera href=stock.quote.stockstar.com600290.shtmlST华仪atdtd class=align_right 28116.43tdtd class=align_right 28116.43tdtd class=align_right 75990.35tdtd class=align_right 75990.35tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600301.shtml600301atdtd class=align_centera href=stock.quote.stockstar.com600301.shtml华锡有色atdtd class=align_right 532774.54tdtd class=align_right 1224018.07tdtd class=align_right 27533.57tdtd class=align_right 63256.75tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600311.shtml600311atdtd class=align_centera href=stock.quote.stockstar.com600311.shtmlST荣华atdtd class=align_right 40601.60tdtd class=align_right 40601.60tdtd class=align_right 66560.00tdtd class=align_right 66560.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600355.shtml600355atdtd class=align_centera href=stock.quote.stockstar.com600355.shtmlST精伦atdtd class=align_right 125974.84tdtd class=align_right 125974.84tdtd class=align_right 49208.92tdtd class=align_right 49208.92tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600358.shtml600358atdtd class=align_centera href=stock.quote.stockstar.com600358.shtmlST联合atdtd class=align_right 224191.88tdtd class=align_right 224191.88tdtd class=align_right 50493.67tdtd class=align_right 50493.67tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600360.shtml600360atdtd class=align_centera href=stock.quote.stockstar.com600360.shtmlST华微atdtd class=align_right 625152.24tdtd class=align_right 625152.24tdtd class=align_right 96029.53tdtd class=align_right 96029.53tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600365.shtml600365atdtd class=align_centera href=stock.quote.stockstar.com600365.shtmlST通葡atdtd class=align_right 132315.52tdtd class=align_right 135058.40tdtd class=align_right 41872.00tdtd class=align_right 42740.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600381.shtml600381atdtd class=align_centera href=stock.quote.stockstar.com600381.shtmlST春天atdtd class=align_right 219560.72tdtd class=align_right 219560.72tdtd class=align_right 58706.07tdtd class=align_right 58706.07tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600387.shtml600387atdtd class=align_centera href=stock.quote.stockstar.com600387.shtmlST海越atdtd class=align_right 56162.74tdtd class=align_right 65072.08tdtd class=align_right 40404.85tdtd class=align_right 46814.45tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600393.shtml600393atdtd class=align_centera href=stock.quote.stockstar.com600393.shtmlST粤泰atdtd class=align_right 49481.74tdtd class=align_right 93841.17tdtd class=align_right 133734.42tdtd class=align_right 253624.79tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600408.shtml600408atdtd class=align_centera href=stock.quote.stockstar.com600408.shtml安泰集团atdtd class=align_right 187264.80tdtd class=align_right 187264.80tdtd class=align_right 100680.00tdtd class=align_right 100680.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600421.shtml600421atdtd class=align_centera href=stock.quote.stockstar.com600421.shtmlST华嵘atdtd class=align_right 103081.20tdtd class=align_right 103081.20tdtd class=align_right 19560.00tdtd class=align_right 19560.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600444.shtml600444atdtd class=align_centera href=stock.quote.stockstar.com600444.shtml国机通用atdtd class=align_right 222268.49tdtd class=align_right 222268.49tdtd class=align_right 14642.19tdtd class=align_right 14642.19tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600462.shtml600462atdtd class=align_centera href=stock.quote.stockstar.com600462.shtmlST九有atdtd class=align_right 57644.64tdtd class=align_right 59239.68tdtd class=align_right 60046.50tdtd class=align_right 61708.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600466.shtml600466atdtd class=align_centera href=stock.quote.stockstar.com600466.shtmlST蓝光atdtd class=align_right 121397.22tdtd class=align_right 121397.22tdtd class=align_right 303493.04tdtd class=align_right 303493.04tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600485.shtml600485atdtd class=align_centera href=stock.quote.stockstar.com600485.shtmlST信威atdtd class=align_right 638615.01tdtd class=align_right 985301.32tdtd class=align_right 189500.00tdtd class=align_right 292374.28tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600525.shtml600525atdtd class=align_centera href=stock.quote.stockstar.com600525.shtmlST长园atdtd class=align_right 419372.09tdtd class=align_right 419372.09tdtd class=align_right 131878.02tdtd class=align_right 131878.02tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600539.shtml600539atdtd class=align_centera href=stock.quote.stockstar.com600539.shtml狮头股份atdtd class=align_right 277380.00tdtd class=align_right 277380.00tdtd class=align_right 23000.00tdtd class=align_right 23000.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600565.shtml600565atdtd class=align_centera href=stock.quote.stockstar.com600565.shtmlST迪马atdtd class=align_right 211778.03tdtd class=align_right 211778.03tdtd class=align_right 249150.63tdtd class=align_right 249150.63tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600568.shtml600568atdtd class=align_centera href=stock.quote.stockstar.com600568.shtmlST中珠atdtd class=align_right 223655.02tdtd class=align_right 267044.54tdtd class=align_right 166906.73tdtd class=align_right 199286.97tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600599.shtml600599atdtd class=align_centera href=stock.quote.stockstar.com600599.shtmlST熊猫atdtd class=align_right 127820.00tdtd class=align_right 127820.00tdtd class=align_right 16600.00tdtd class=align_right 16600.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600603.shtml600603atdtd class=align_centera href=stock.quote.stockstar.com600603.shtmlST广物atdtd class=align_right 859196.99tdtd class=align_right 859196.99tdtd class=align_right 119332.92tdtd class=align_right 119332.92tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600608.shtml600608atdtd class=align_centera href=stock.quote.stockstar.com600608.shtmlST沪科atdtd class=align_right 109201.40tdtd class=align_right 112799.47tdtd class=align_right 31837.14tdtd class=align_right 32886.14tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600636.shtml600636atdtd class=align_centera href=stock.quote.stockstar.com600636.shtmlST国化atdtd class=align_right 324152.60tdtd class=align_right 324152.60tdtd class=align_right 43863.68tdtd class=align_right 43863.68tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600644.shtml600644atdtd class=align_centera href=stock.quote.stockstar.com600644.shtml乐山电力atdtd class=align_right 598701.53tdtd class=align_right 643092.75tdtd class=align_right 53840.07tdtd class=align_right 57832.08tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600671.shtml600671atdtd class=align_centera href=stock.quote.stockstar.com600671.shtmlST目药atdtd class=align_right 163957.56tdtd class=align_right 164036.16tdtd class=align_right 12172.05tdtd class=align_right 12177.89tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600691.shtml600691atdtd class=align_centera href=stock.quote.stockstar.com600691.shtml阳煤化工atdtd class=align_right 513126.57tdtd class=align_right 513212.10tdtd class=align_right 237558.60tdtd class=align_right 237598.20tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600696.shtml600696atdtd class=align_centera href=stock.quote.stockstar.com600696.shtmlST岩石atdtd class=align_right 200681.66tdtd class=align_right 200681.66tdtd class=align_right 33446.94tdtd class=align_right 33446.94tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600710.shtml600710atdtd class=align_centera href=stock.quote.stockstar.com600710.shtml苏美达atdtd class=align_right 1250559.21tdtd class=align_right 1250559.21tdtd class=align_right 130674.94tdtd class=align_right 130674.94tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600711.shtml600711atdtd class=align_centera href=stock.quote.stockstar.com600711.shtmlST盛屯atdtd class=align_right 1743104.91tdtd class=align_right 1743104.91tdtd class=align_right 309061.16tdtd class=align_right 309061.16tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600715.shtml600715atdtd class=align_centera href=stock.quote.stockstar.com600715.shtml文投控股atdtd class=align_right 617670.36tdtd class=align_right 941886.01tdtd class=align_right 266237.22tdtd class=align_right 405985.35tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600722.shtml600722atdtd class=align_centera href=stock.quote.stockstar.com600722.shtml金牛化工atdtd class=align_right 351044.95tdtd class=align_right 351044.95tdtd class=align_right 68031.97tdtd class=align_right 68031.97tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600732.shtml600732atdtd class=align_centera href=stock.quote.stockstar.com600732.shtml爱旭股份atdtd class=align_right 1679968.05tdtd class=align_right 1920826.17tdtd class=align_right 159844.72tdtd class=align_right 182761.77tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600753.shtml600753atdtd class=align_centera href=stock.quote.stockstar.com600753.shtmlST庚星atdtd class=align_right 127590.18tdtd class=align_right 127590.18tdtd class=align_right 23030.72tdtd class=align_right 23030.72tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600777.shtml600777atdtd class=align_centera href=stock.quote.stockstar.com600777.shtmlST新潮atdtd class=align_right 2043534.92tdtd class=align_right 2182959.16tdtd class=align_right 636615.24tdtd class=align_right 680049.58tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600779.shtml600779atdtd class=align_centera href=stock.quote.stockstar.com600779.shtml水井坊atdtd class=align_right 2281027.46tdtd class=align_right 2281027.46tdtd class=align_right 48750.32tdtd class=align_right 48750.32tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600793.shtml600793atdtd class=align_centera href=stock.quote.stockstar.com600793.shtml宜宾纸业atdtd class=align_right 442436.91tdtd class=align_right 442436.91tdtd class=align_right 17690.40tdtd class=align_right 17690.40tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600804.shtml600804atdtd class=align_centera href=stock.quote.stockstar.com600804.shtmlST鹏博atdtd class=align_right 86343.06tdtd class=align_right 102762.76tdtd class=align_right 139263.00tdtd class=align_right 165746.39tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600811.shtml600811atdtd class=align_centera href=stock.quote.stockstar.com600811.shtmlST东方atdtd class=align_right 131714.82tdtd class=align_right 131714.82tdtd class=align_right 365874.49tdtd class=align_right 365874.49tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600817.shtml600817atdtd class=align_centera href=stock.quote.stockstar.com600817.shtml宇通重工atdtd class=align_right 599482.51tdtd class=align_right 610397.76tdtd class=align_right 52724.93tdtd class=align_right 53684.94tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600823.shtml600823atdtd class=align_centera href=stock.quote.stockstar.com600823.shtmlST世茂atdtd class=align_right 161300.24tdtd class=align_right 161300.24tdtd class=align_right 375116.83tdtd class=align_right 375116.83tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600831.shtml600831atdtd class=align_centera href=stock.quote.stockstar.com600831.shtmlST广网atdtd class=align_right 198354.21tdtd class=align_right 198354.21tdtd class=align_right 71094.70tdtd class=align_right 71094.70tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600836.shtml600836atdtd class=align_centera href=stock.quote.stockstar.com600836.shtmlST易连atdtd class=align_right 29935.94tdtd class=align_right 30102.89tdtd class=align_right 66524.31tdtd class=align_right 66895.31tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600870.shtml600870atdtd class=align_centera href=stock.quote.stockstar.com600870.shtml退市厦华atdtd class=align_right 31391.98tdtd class=align_right 31391.98tdtd class=align_right 52319.97tdtd class=align_right 52319.97tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600892.shtml600892atdtd class=align_centera href=stock.quote.stockstar.com600892.shtmlST大晟atdtd class=align_right 149897.64tdtd class=align_right 149936.40tdtd class=align_right 55931.95tdtd class=align_right 55946.42tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600898.shtml600898atdtd class=align_centera href=stock.quote.stockstar.com600898.shtmlST美讯atdtd class=align_right 18686.76tdtd class=align_right 21118.19tdtd class=align_right 25252.38tdtd class=align_right 28538.10tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600962.shtml600962atdtd class=align_centera href=stock.quote.stockstar.com600962.shtml国投中鲁atdtd class=align_right 382826.60tdtd class=align_right 382826.60tdtd class=align_right 26221.00tdtd class=align_right 26221.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com600984.shtml600984atdtd class=align_centera href=stock.quote.stockstar.com600984.shtml建设机械atdtd class=align_right 421109.71tdtd class=align_right 421109.71tdtd class=align_right 125704.39tdtd class=align_right 125704.39tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com601258.shtml601258atdtd class=align_centera href=stock.quote.stockstar.com601258.shtmlST庞大atdtd class=align_right 409089.00tdtd class=align_right 409089.00tdtd class=align_right 1022722.51tdtd class=align_right 1022722.51tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603003.shtml603003atdtd class=align_centera href=stock.quote.stockstar.com603003.shtmlST龙宇atdtd class=align_right 144496.64tdtd class=align_right 144496.64tdtd class=align_right 37629.33tdtd class=align_right 37629.33tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603007.shtml603007atdtd class=align_centera href=stock.quote.stockstar.com603007.shtmlST花王atdtd class=align_right 263410.82tdtd class=align_right 462124.25tdtd class=align_right 49983.08tdtd class=align_right 87689.61tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603021.shtml603021atdtd class=align_centera href=stock.quote.stockstar.com603021.shtmlST华鹏atdtd class=align_right 109742.19tdtd class=align_right 109742.19tdtd class=align_right 31994.81tdtd class=align_right 31994.81tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603023.shtml603023atdtd class=align_centera href=stock.quote.stockstar.com603023.shtmlST威帝atdtd class=align_right 205387.21tdtd class=align_right 205387.21tdtd class=align_right 55811.74tdtd class=align_right 55811.74tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603261.shtml603261atdtd class=align_centera href=stock.quote.stockstar.com603261.shtmlST立航atdtd class=align_right 137261.39tdtd class=align_right 137974.40tdtd class=align_right 7750.50tdtd class=align_right 7790.76tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603268.shtml603268atdtd class=align_centera href=stock.quote.stockstar.com603268.shtmlST松发atdtd class=align_right 484755.00tdtd class=align_right 484755.00tdtd class=align_right 12416.88tdtd class=align_right 12416.88tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603363.shtml603363atdtd class=align_centera href=stock.quote.stockstar.com603363.shtmlST傲农atdtd class=align_right 626401.04tdtd class=align_right 1020361.04tdtd class=align_right 159796.18tdtd class=align_right 260296.18tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603377.shtml603377atdtd class=align_centera href=stock.quote.stockstar.com603377.shtmlST东时atdtd class=align_right 217319.66tdtd class=align_right 217319.66tdtd class=align_right 71486.73tdtd class=align_right 71486.73tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603388.shtml603388atdtd class=align_centera href=stock.quote.stockstar.com603388.shtmlST元成atdtd class=align_right 122475.82tdtd class=align_right 122475.82tdtd class=align_right 32573.36tdtd class=align_right 32573.36tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603389.shtml603389atdtd class=align_centera href=stock.quote.stockstar.com603389.shtmlST亚振atdtd class=align_right 195487.49tdtd class=align_right 195487.49tdtd class=align_right 26275.20tdtd class=align_right 26275.20tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603398.shtml603398atdtd class=align_centera href=stock.quote.stockstar.com603398.shtmlST沐邦atdtd class=align_right 264087.69tdtd class=align_right 264087.69tdtd class=align_right 43364.15tdtd class=align_right 43364.15tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603555.shtml603555atdtd class=align_centera href=stock.quote.stockstar.com603555.shtmlST贵人atdtd class=align_right 105290.86tdtd class=align_right 105290.86tdtd class=align_right 157150.54tdtd class=align_right 157150.54tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603557.shtml603557atdtd class=align_centera href=stock.quote.stockstar.com603557.shtmlST起步atdtd class=align_right 172692.02tdtd class=align_right 172692.02tdtd class=align_right 62343.69tdtd class=align_right 62343.69tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603559.shtml603559atdtd class=align_centera href=stock.quote.stockstar.com603559.shtmlST通脉atdtd class=align_right 321021.58tdtd class=align_right 321021.58tdtd class=align_right 40127.70tdtd class=align_right 40127.70tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603580.shtml603580atdtd class=align_centera href=stock.quote.stockstar.com603580.shtmlST艾艾atdtd class=align_right 181113.06tdtd class=align_right 181113.06tdtd class=align_right 13067.32tdtd class=align_right 13067.32tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603721.shtml603721atdtd class=align_centera href=stock.quote.stockstar.com603721.shtmlST天择atdtd class=align_right 214500.00tdtd class=align_right 214500.00tdtd class=align_right 13000.00tdtd class=align_right 13000.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603789.shtml603789atdtd class=align_centera href=stock.quote.stockstar.com603789.shtmlST星农atdtd class=align_right 133380.00tdtd class=align_right 138741.57tdtd class=align_right 26000.00tdtd class=align_right 27045.14tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603813.shtml603813atdtd class=align_centera href=stock.quote.stockstar.com603813.shtmlST原尚atdtd class=align_right 126548.39tdtd class=align_right 147756.11tdtd class=align_right 8994.20tdtd class=align_right 10501.50tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603828.shtml603828atdtd class=align_centera href=stock.quote.stockstar.com603828.shtmlST柯利达atdtd class=align_right 300353.57tdtd class=align_right 300363.92tdtd class=align_right 59593.96tdtd class=align_right 59596.02tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603838.shtml603838atdtd class=align_centera href=stock.quote.stockstar.com603838.shtmlST四通atdtd class=align_right 166408.32tdtd class=align_right 166408.32tdtd class=align_right 32001.60tdtd class=align_right 32001.60tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603843.shtml603843atdtd class=align_centera href=stock.quote.stockstar.com603843.shtmlST正平atdtd class=align_right 167209.95tdtd class=align_right 167209.95tdtd class=align_right 69962.32tdtd class=align_right 69962.32tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603869.shtml603869atdtd class=align_centera href=stock.quote.stockstar.com603869.shtmlST智知atdtd class=align_right 304718.31tdtd class=align_right 304718.31tdtd class=align_right 50450.05tdtd class=align_right 50450.05tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603959.shtml603959atdtd class=align_centera href=stock.quote.stockstar.com603959.shtmlST百利atdtd class=align_right 169643.45tdtd class=align_right 169643.45tdtd class=align_right 49029.90tdtd class=align_right 49029.90tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com603963.shtml603963atdtd class=align_centera href=stock.quote.stockstar.com603963.shtmlST大药atdtd class=align_right 25924.60tdtd class=align_right 25924.60tdtd class=align_right 21970.00tdtd class=align_right 21970.00tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com605081.shtml605081atdtd class=align_centera href=stock.quote.stockstar.com605081.shtmlST太和atdtd class=align_right 131932.84tdtd class=align_right 131932.84tdtd class=align_right 11324.71tdtd class=align_right 11324.71tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com605199.shtml605199atdtd class=align_centera href=stock.quote.stockstar.com605199.shtmlST葫芦娃atdtd class=align_right 405710.27tdtd class=align_right 405710.27tdtd class=align_right 40010.88tdtd class=align_right 40010.88tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com688184.shtml688184atdtd class=align_centera href=stock.quote.stockstar.com688184.shtmlST帕瓦atdtd class=align_right 90639.74tdtd class=align_right 143460.86tdtd class=align_right 10048.75tdtd class=align_right 15904.75tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com688287.shtml688287atdtd class=align_centera href=stock.quote.stockstar.com688287.shtmlST观典atdtd class=align_right 176735.94tdtd class=align_right 176735.94tdtd class=align_right 37051.56tdtd class=align_right 37051.56tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com688511.shtml688511atdtd class=align_centera href=stock.quote.stockstar.com688511.shtmlST天微atdtd class=align_right 160927.61tdtd class=align_right 160927.61tdtd class=align_right 10282.91tdtd class=align_right 10282.91tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com688646.shtml688646atdtd class=align_centera href=stock.quote.stockstar.com688646.shtmlST逸飞atdtd class=align_right 155703.51tdtd class=align_right 255321.28tdtd class=align_right 5803.34tdtd class=align_right 9516.26tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com900952.shtml900952atdtd class=align_centera href=stock.quote.stockstar.com900952.shtmlST锦港Batdtd class=align_right 1225.44tdtd class=align_right 11012.60tdtd class=align_right 22280.70tdtd class=align_right 200229.15tdtrtrtd class=align_center selecta href=stock.quote.stockstar.com900957.shtml900957atdtd class=align_centera href=stock.quote.stockstar.com900957.shtmlST凌云Batdtd class=align_right 2631.20tdtd class=align_right 4990.70tdtd class=align_right 18400.00tdtd class=align_right 34900.00tdtr
+                                tbody
+                                tbody
+                                    tr class=noSelect no_trHover
+                                        td colspan=16 class=time notSelect
+                                            span class=fl id=datatime
+                                                数据时间：2025-05-09span
+                                            
+                                            span class=fr点击每列的名称可以进行排序span
+                                        td
+                                    tr
+                                tbody
+                            table
+                            script type=textjavascript
+                                var type = shwarn;
+                                var direction=0;0up 1down
+                                var sort=1;
+                                var webhandler = rank;
+                                var pagestr = shwarn;
+                                var floder = stock;
+
+                                $(.title h2).removeClass(cur);
+                                if (type == shwarn) {
+                                    $(.title h2eq(0)).addClass(cur);
+                                } else if(type==shdel) {
+                                    $(.title h2eq(1)).addClass(cur);
+                                }    
+
+                                $(document).ready(function () {
+                                    UtilityInfo.InitPage(); 头部广告  
+                                    Init(); 初始化分页控件
+                                    $(#table1 thead a).eq(sort-1).addClass(getUpDown(direction));   
+                                    initial();
+
+                                });
+
+                                if ($(#datalist).html().indexOf(暂无数据) != -1) {
+                                    $(#datalist).next().hide();
+                                }
+                            script
+                        div
+                    div
+                div
+                
+            div
+        div
+        !-- 右侧内容 end --
+    div
+    div class=clear
+    div
+    !-- 底部 begin  --
+    !-- 底部 begin  --
+div id=bottom
+  a href=javascriptvoid(0); onclick=window.scroll(0,0); title=返回顶部 class=top target=_selfTOP↑a
+  div class=cleardiv
+  div id=foot
+      diva target=_blank href=httpswww.stockstar.comnavmap.html网站导航a  a target=_blank href=info.stockstar.comaboutus公司简介a  a target=_blank href=info.stockstar.comaboutusdisclaimer.htm法律声明a  a target=_blank href=info.stockstar.comjob诚聘英才a  a target=_blank href=info.stockstar.comaboutusin.htm征稿启事a  a target=_blank href=info.stockstar.comaboutuslx.htm联系我们a  a target=_blank href=info.stockstar.comaboutuslx.htm#ad广告服务a  a target=_blank href=info.stockstar.comaboutusreport.htm举报专区a  a target=_blank href=info.stockstar.comaboutusintegrity.htm信用承诺adiv
+    div欢迎访问证券之星！请a target=_blank href=info.stockstar.comaboutuslx.htm点此a与我们联系 版权所有：Copyright &copy; 1996-script type=textjavascriptdocument.write(new Date().getFullYear());script div
+  div
+div
+!-- 底部 end  --
+!--WebTCode Start--
+script type=textjavascript src=httpswww.stockstar.comwtSS_dcs_tag.jsscript
+!--WebTCode End--
+
+
+    !-- 底部 end  --
+    
+!-- 当前页页码（从1开始） --
+input name=ClientPageControl1$hdnPageIndex type=hidden id=ClientPageControl1_hdnPageIndex 
+!-- 每页记录个数 --
+input name=ClientPageControl1$hdnPageSize type=hidden id=ClientPageControl1_hdnPageSize 
+!-- 记录总数 --
+input name=ClientPageControl1$hdnTotalCount type=hidden id=ClientPageControl1_hdnTotalCount 
+!-- 排序字段 --
+input name=ClientPageControl1$hdnSortField type=hidden id=ClientPageControl1_hdnSortField 
+!-- 排序方向（0表示正序、1表示倒序） --
+input name=ClientPageControl1$hdnDirection type=hidden id=ClientPageControl1_hdnDirection 
+    
+    
+body
+html
