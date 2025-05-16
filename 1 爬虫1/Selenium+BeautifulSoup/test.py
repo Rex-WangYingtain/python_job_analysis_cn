@@ -131,7 +131,7 @@ while page <= all_page:
                 highlights = item.select_one(".il__3lk85").text.strip()
             except Exception as e:
                 print('异常 ', e)
-                job_info = ''
+                highlights = ''
 
             cur.execute(
                 sql,
